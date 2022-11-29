@@ -48,7 +48,7 @@ class MovieEvent(BaseModel):
 
 def create_calendar(movie_events: list[MovieEvent]) -> Calendar:
     cal = Calendar()
-    cal.add('prodid', '-//Unikino ICS Kalender - NICHT OFFIZIELL//CallMeMSL@github//')
+    cal.add('prodid', '-//Unikino ICS Kalender - NICHT OFFIZIELL//CallMeMSL@github//EN')
     cal.add('version', '2.0')
     for me in movie_events:
         cal.add_component(me.event)
