@@ -34,6 +34,7 @@ class MovieEvent(BaseModel):
     def event(self):
         event = Event()
         event.add('name', self.title)
+        event.add('summary', f"{self.title} - Unifilm")
         event.add('description', self.cal_description)
         event.add('dtstart', self.start)
         event.add('dtend', self.end)
