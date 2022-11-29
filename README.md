@@ -13,7 +13,7 @@ Nun muss das Kino per Umgebungvariable festgelegt werden.
 Setze hierfür ```UNIFILM_KINO_URL``` mit der URL deines gewünschten Kinos.
 
 Beispiel für Bielefeld:
-```export UNIFILM_KINO_URL="https://www.unifilm.de/studentenkinos/Bielefeld_Uni"```
+```export UNIFILM_KINO_URL=https://www.unifilm.de/studentenkinos/Bielefeld_Uni```
 
 Anschließend starte den Server mit 
 ```uvicorn main:app```.
