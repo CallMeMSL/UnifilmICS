@@ -27,6 +27,6 @@ def parse_page():
         pass  # dummykalender mit Fehlermeldung erstellen?
     movie_events = parse_unikino(html)
     global calendar
-    calendar = create_calendar(movie_events).to_ical().decode("utf-8").replace("\\", "").encode("utf-8")
+    calendar = create_calendar(movie_events).to_ical()
 
     logging.info("updated calendar")
