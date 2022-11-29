@@ -22,7 +22,7 @@ async def root():
 @app.on_event("startup")
 @repeat_every(seconds=5)  # day
 def parse_page():
-    html = download_unikino_page("https://www.unifilm.de/studentenkinos/Bielefeld_Uni")
+    html = download_unikino_page(unifilm_kino_url)
     if html is None:
         pass  # dummykalender mit Fehlermeldung erstellen?
     movie_events = parse_unikino(html)
