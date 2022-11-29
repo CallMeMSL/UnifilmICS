@@ -28,7 +28,7 @@ class MovieEvent(BaseModel):
         md_merged = ' '.join(self.movie_descriptions)
         infos_merged = ' '.join(self.infos)
         awards_merged = ' '.join(self.awards)
-        return f"{md_merged}{infos_merged}{awards_merged} Laufzeit: {self.movie_duration} Minuten."
+        return f" {md_merged} {infos_merged} {awards_merged} Laufzeit: {self.movie_duration} Minuten."
 
     @property
     def event(self):
