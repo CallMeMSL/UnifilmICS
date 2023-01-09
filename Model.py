@@ -39,9 +39,9 @@ class MovieEvent(BaseModel):
         event.add('dtstart', self.start)
         event.add('dtend', self.end)
         event.add('uid', uuid1())
-        event['geo'] = self.geo_location
+        # event['geo'] = self.geo_location
         event.add('location', self.room)
-        event.add('image', self.img_url)
+        # event.add('image', self.img_url)
         event.add('dtstamp', datetime.datetime.now())
         return event
 
